@@ -10,7 +10,7 @@ func largestRange(arr []int) []int {
 			currentLargestRange = append(currentLargestRange, currentNum)
 		} else if len(currentLargestRange) > len(formerLargestRange) {
 			formerLargestRange = currentLargestRange
-			currentLargestRange = []int{}
+			currentLargestRange = nil
 		} else {
 			currentLargestRange = nil
 			currentLargestRange = append(currentLargestRange, currentNum)
